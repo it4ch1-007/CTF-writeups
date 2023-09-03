@@ -12,7 +12,9 @@
 
 ![Alt text](../images/image-3.png)
 
-![Alt text](..images/image-4.png)
+![image](https://github.com/it4ch1-007/CTF-writeups/assets/133276365/4d68e694-c45b-43b2-a11d-0fd098991f36)
+
+
 
 ->One after the other we get three prompts to enter some string . So i simply enter "hello" to see what happens.
 
