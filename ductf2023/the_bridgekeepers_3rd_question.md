@@ -57,11 +57,14 @@
 
 - Also in array a we observe that it is filled with arrays equal to its own . However the 17th index is equal to array(b).
 
-![Alt text](../images/image-12.png)
+![image](https://github.com/it4ch1-007/CTF-writeups/assets/133276365/6bc52383-bdbb-468c-891b-5f67a182018b)
+
 
 - Thus if our first input string character is (97+17) . Then we walk will be updated to the array b for its second iteration inside the for loop.
  - Similarly for the second iteration we will move to update walk to array(c) if the ASCII value of the character in the string is (97+4)
- ![Alt text](../images/image-11.png)
+
+![image](https://github.com/it4ch1-007/CTF-writeups/assets/133276365/4d68e694-c45b-43b2-a11d-0fd098991f36)
+
 
 - This can be done manually for all the arrays as we want to get simply to the n variable stored at the 4th index of the array(m).
 
