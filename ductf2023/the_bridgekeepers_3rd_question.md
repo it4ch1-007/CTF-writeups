@@ -4,7 +4,7 @@
 
 -> Here we are given a website link and some clues in the question statement thus first we will check the website:
 
-![Alt text](../images/image.png)
+[![Alt text](../images/image.png)](https://github.com/it4ch1-007/CTF-writeups/blob/main/images/image-1.png)
 
 ->This is the website that we come across at first. the text written at the center of the website is a link thus we will simply click on the link to see what happens.
 
