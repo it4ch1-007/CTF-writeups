@@ -9,9 +9,11 @@
 
 ->This is the website that we come across at first. the text written at the center of the website is a link thus we will simply click on the link to see what happens.
 
-![Alt text](../images/image-2.png)
+![image](https://github.com/it4ch1-007/CTF-writeups/assets/133276365/24b31434-75d9-4eb4-811e-e692ee8680ee)
 
-![Alt text](../images/image-3.png)
+
+![image](https://github.com/it4ch1-007/CTF-writeups/assets/133276365/d9667134-f748-49cf-9db9-745893047f7a)
+
 
 ![image](https://github.com/it4ch1-007/CTF-writeups/assets/133276365/4d68e694-c45b-43b2-a11d-0fd098991f36)
 
@@ -21,11 +23,13 @@
 
 ->Then the text of the website changed to:
 
-![Alt text](../images/image-5.png)
+![image](https://github.com/it4ch1-007/CTF-writeups/assets/133276365/c71b9688-22fa-4e26-81ad-e0bbb0853a9f)
+
 
 ->Thus we will now see the source code and the js files of the webpage.
 
-![Alt text](../images/image-6.png)
+![image](https://github.com/it4ch1-007/CTF-writeups/assets/133276365/f717c75d-39b0-46ba-9097-1b8dc3496845)
+
 
 ->By seeing the source code of the webpage. We infer:
 
@@ -33,11 +37,13 @@
 
 **Thus i tried to enter "blue" in the last prompt but it did'nt budge.**
 
-![Alt text](../images/image-7.png)
+![image](https://github.com/it4ch1-007/CTF-writeups/assets/133276365/cfaedab9-a818-4bb9-8c5a-3d248e188653)
+
 
 ->Now i checked the js file of the webpage: (index.js)
 
-![Alt text](../images/image-8.png)
+![image](https://github.com/it4ch1-007/CTF-writeups/assets/133276365/0c0f876a-57e0-4085-862d-933fb54cd723)
+
 
 **The prompt() function is overloaded and redefined here**
 
@@ -47,11 +53,13 @@
 
 - In the given for loop:
 
-![Alt text](../images/image-9.png)
+![image](https://github.com/it4ch1-007/CTF-writeups/assets/133276365/747f82bd-f110-4e57-a601-7785181e40ff)
+
 
 - walk array is iterating and updating itself to the value according to the charCode or the ASCII value of the characters in the input string (answer) - 97.
 
-![Alt text](../images/image-10.png)
+![image](https://github.com/it4ch1-007/CTF-writeups/assets/133276365/4652d4b6-965b-439e-a18a-c672ff076379)
+
 
 - walk array is intialized to array a.
 
