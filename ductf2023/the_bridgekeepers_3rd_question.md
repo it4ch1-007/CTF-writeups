@@ -82,4 +82,4 @@ as our answer input
 
 **We enter this in the third prompt and we get the required flag:
 
-![Alt text](../images/image-13.png)
+![image](https://github.com/it4ch1-007/CTF-writeups/assets/133276365/b5a0323f-15e1-4c77-b636-14b87039e55c)
