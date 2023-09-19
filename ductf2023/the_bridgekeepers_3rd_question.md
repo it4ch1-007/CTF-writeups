@@ -10,13 +10,15 @@
 
 ->This is the website that we come across at first. the text written at the center of the website is a link thus we will simply click on the link to see what happens.
 
-![image](https://github.com/it4ch1-007/CTF-writeups/assets/133276365/24b31434-75d9-4eb4-811e-e692ee8680ee)
+![image](https://github.com/it4ch1-007/CTF-writeups/assets/133276365/dac59f5c-2c27-41f3-8966-322877394288)
 
 
-![image](https://github.com/it4ch1-007/CTF-writeups/assets/133276365/d9667134-f748-49cf-9db9-745893047f7a)
+![image](https://github.com/it4ch1-007/CTF-writeups/assets/133276365/493b2b05-de61-43af-ad30-566a5af0fad0)
 
 
-![image](https://github.com/it4ch1-007/CTF-writeups/assets/133276365/4d68e694-c45b-43b2-a11d-0fd098991f36)
+![image](https://github.com/it4ch1-007/CTF-writeups/assets/133276365/8ddbea2c-a359-448a-b041-2d6dbcb7418c)
+
+![image](https://github.com/it4ch1-007/CTF-writeups/assets/133276365/08c2ac6c-2357-421c-8cab-7c53b876accc)
 
 
 
@@ -24,12 +26,13 @@
 
 ->Then the text of the website changed to:
 
-![image](https://github.com/it4ch1-007/CTF-writeups/assets/133276365/c71b9688-22fa-4e26-81ad-e0bbb0853a9f)
+![image](https://github.com/it4ch1-007/CTF-writeups/assets/133276365/c3da11b6-6d32-413e-99ea-5d06e4038114)
+
 
 
 ->Thus we will now see the source code and the js files of the webpage.
 
-![image](https://github.com/it4ch1-007/CTF-writeups/assets/133276365/f717c75d-39b0-46ba-9097-1b8dc3496845)
+![image](https://github.com/it4ch1-007/CTF-writeups/assets/133276365/2dd836a3-5c3a-4d00-b88e-3752d851fbf8)
 
 
 ->By seeing the source code of the webpage. We infer:
@@ -38,12 +41,13 @@
 
 **Thus i tried to enter "blue" in the last prompt but it did'nt budge.**
 
-![image](https://github.com/it4ch1-007/CTF-writeups/assets/133276365/cfaedab9-a818-4bb9-8c5a-3d248e188653)
+![image](https://github.com/it4ch1-007/CTF-writeups/assets/133276365/445be382-f61b-4696-99a9-e3d5c7b2d425)
 
 
 ->Now i checked the js file of the webpage: (index.js)
 
-![image](https://github.com/it4ch1-007/CTF-writeups/assets/133276365/0c0f876a-57e0-4085-862d-933fb54cd723)
+![image](https://github.com/it4ch1-007/CTF-writeups/assets/133276365/b92e2fa4-fb27-4a3a-a7c7-30719b654e38)
+
 
 
 **The prompt() function is overloaded and redefined here**
@@ -54,25 +58,29 @@
 
 - In the given for loop:
 
-![image](https://github.com/it4ch1-007/CTF-writeups/assets/133276365/747f82bd-f110-4e57-a601-7785181e40ff)
+![image](https://github.com/it4ch1-007/CTF-writeups/assets/133276365/cbbf9820-8d5f-4ad3-92bd-7db7a281d114)
+
 
 
 - walk array is iterating and updating itself to the value according to the charCode or the ASCII value of the characters in the input string (answer) - 97.
 
-![image](https://github.com/it4ch1-007/CTF-writeups/assets/133276365/4652d4b6-965b-439e-a18a-c672ff076379)
+![image](https://github.com/it4ch1-007/CTF-writeups/assets/133276365/28b74f24-2c0b-423c-b962-2bf6a2247146)
+
 
 
 - walk array is intialized to array a.
 
 - Also in array a we observe that it is filled with arrays equal to its own . However the 17th index is equal to array(b).
 
-![image](https://github.com/it4ch1-007/CTF-writeups/assets/133276365/6bc52383-bdbb-468c-891b-5f67a182018b)
+![image](https://github.com/it4ch1-007/CTF-writeups/assets/133276365/47f4d9ee-deb4-4cb4-9f74-fe81f39d5bf9)
+
 
 
 - Thus if our first input string character is (97+17) . Then we walk will be updated to the array b for its second iteration inside the for loop.
  - Similarly for the second iteration we will move to update walk to array(c) if the ASCII value of the character in the string is (97+4)
 
-![image](https://github.com/it4ch1-007/CTF-writeups/assets/133276365/6526bc82-eae4-4067-81b7-b22b734ffa00)
+![image](https://github.com/it4ch1-007/CTF-writeups/assets/133276365/22e2dae2-1400-44b0-9358-75b6b1863dc7)
+
 
 
 
@@ -95,4 +103,5 @@ as our answer input
 
 **We enter this in the third prompt and we get the required flag:
 
-![image](https://github.com/it4ch1-007/CTF-writeups/assets/133276365/b5a0323f-15e1-4c77-b636-14b87039e55c)
+![image](https://github.com/it4ch1-007/CTF-writeups/assets/133276365/5e59a65d-d245-48b2-9ab9-4c0e80ce43cf)
+
